@@ -1,0 +1,32 @@
+CREATE DATABASE School;
+
+USE School;
+
+CREATE TABLE St_info (
+    St_no NCHAR(10),
+    Adm_date DATE,
+    St_name NVARCHAR(50),
+    St_age INT,
+    St_address NVARCHAR(100)
+);
+
+CREATE TABLE Courses (
+    C_no NCHAR(10),
+    C_name NVARCHAR(50),
+    C_teacher NVARCHAR(50),
+    C_credit_hours INT
+);
+
+INSERT INTO St_info (St_no, Adm_date, St_name, St_age, St_address)
+VALUES
+    ('S1', '2024-10-27', 'Muhammad ali', 18, 'SBA'),
+    ('S2', '2023-12-20', 'Hamza', 19, 'Sba'),
+
+
+INSERT INTO Courses (C_no, C_name, C_teacher, C_credit_hours)
+VALUES
+    ('C1', 'Math', 'Mam Esha', 3),
+    ('C2', 'software ', 'sir akhter', 3),
+    ('C4', 'AI', 'sir basit', 3),
+    ('C5', 'English', 'sir ali', 2);
+
